@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>j4ck.xyz — Home</title>
+    <meta name="description" content="Links to my site sections and socials.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/jpeg" href="https://cdn.bsky.app/img/avatar/plain/did:plc:4hawmtgzjx3vclfyphbhfn7v/bafkreiclz6jxuiw4ecq6yikmsozmww7qxbahhxwai53bxsa33hg3zt26my@jpeg">
+    <style>
+        :root {
+            color-scheme: dark;
+            /* Catppuccin Mocha */
+            --rosewater: #f5e0dc;
+            --flamingo: #f2cdcd;
+            --pink: #f5c2e7;
+            --mauve: #cba6f7;
+            --red: #f38ba8;
+            --maroon: #eba0ac;
+            --peach: #fab387;
+            --yellow: #f9e2af;
+            --green: #a6e3a1;
+            --teal: #94e2d5;
+            --sky: #89dceb;
+            --sapphire: #74c7ec;
+            --blue: #89b4fa;
+            --lavender: #b4befe;
+            --text: #cdd6f4;
+            --subtext1: #bac2de;
+            --subtext0: #a6adc8;
+            --overlay2: #9399b2;
+            --overlay1: #7f849c;
+            --overlay0: #6c7086;
+            --surface2: #585b70;
+            --surface1: #45475a;
+            --surface0: #313244;
+            --base: #1e1e2e;
+            --mantle: #181825;
+            --crust: #11111b;
+
+            /* Site tokens mapped to Catppuccin */
+            --bg: var(--base);
+            --card: var(--surface0);
+            --fg: var(--text);
+            --muted: var(--subtext0);
+            --accent: var(--blue);
+            --link: var(--lavender);
+            --border: var(--overlay0);
+        }
+        * { box-sizing: border-box; }
+        html, body { height: 100%; }
+        body {
+            margin: 0;
+            font-family: 'Intel One Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            background:
+                radial-gradient(900px 500px at 18% 8%, color-mix(in oklab, var(--mauve) 10%, transparent), transparent 60%),
+                radial-gradient(800px 450px at 82% 0%, color-mix(in oklab, var(--sapphire) 9%, transparent), transparent 60%),
+                var(--bg);
+            color: var(--fg);
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+        .card {
+            width: 100%;
+            max-width: 720px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            box-shadow: none;
+        }
+        h1 {
+            margin: 0 0 6px;
+            font-size: 28px;
+            letter-spacing: .2px;
+        }
+        p { margin: 0; color: var(--muted); }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .tile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 16px;
+            border: 1px solid var(--overlay0);
+            border-radius: 12px;
+            background: var(--surface0);
+            text-decoration: none;
+            color: var(--fg);
+            transition: transform .12s ease, background .12s ease, border-color .12s ease;
+        }
+        .tile:hover { transform: scale(1.02); border-color: var(--overlay1); background: var(--surface1); }
+        .tile .label { font-weight: 600; display: flex; align-items: center; gap: 10px; }
+        .tile .label i { color: var(--muted); transition: color .12s ease; }
+        .tile .hint { color: var(--muted); font-size: 14px; }
+        footer { margin-top: 18px; font-size: 14px; color: var(--muted); }
+        a.inline { color: var(--link); }
+
+        /* Brand icon hover colors */
+        .tile:hover .fa-bluesky { color: #1684FF; }
+        .tile:hover .fa-twitter { color: #1DA1F2; }
+        .tile:hover .fa-mastodon { color: #858AFA; }
+        .tile:hover .fa-github { color: #ffffff; }
+        .tile:hover .fa-envelope { color: var(--mauve); }
+    </style>
+    <link rel="canonical" href="https://j4ck.xyz/">
+</head>
+<body>
+    <main class="card" role="main">
+        <header>
+            <h1>jack</h1>
+            <p>Central place for my links.</p>
+        </header>
+
+        <section class="grid" aria-label="Primary links">
+            <a class="tile" href="https://bsky.app/profile/did:plc:4hawmtgzjx3vclfyphbhfn7v" rel="me noopener noreferrer" target="_blank">
+                <span class="label"><i class="fa-brands fa-bluesky"></i> Bluesky</span>
+                <span class="hint">@j4ck.xyz</span>
+            </a>
+            <a class="tile" href="https://twitter.com/jglypt" rel="me noopener noreferrer" target="_blank">
+                <span class="label"><i class="fa-brands fa-twitter"></i> Twitter</span>
+                <span class="hint">@jglypt</span>
+            </a>
+            <a class="tile" href="https://mastodon.social/@j4ck" rel="me noopener noreferrer" target="_blank">
+                <span class="label"><i class="fa-brands fa-mastodon"></i> Mastodon</span>
+                <span class="hint">@j4ck</span>
+            </a>
+            <a class="tile" href="https://github.com/j4ckxyz" rel="me noopener noreferrer" target="_blank">
+                <span class="label"><i class="fa-brands fa-github"></i> GitHub</span>
+                <span class="hint">@j4ckxyz</span>
+            </a>
+            <a class="tile" href="mailto:jack@j4ck.xyz" rel="noopener" target="_blank">
+                <span class="label"><i class="fa-solid fa-envelope"></i> Email</span>
+                <span class="hint">jack@j4ck.xyz</span>
+            </a>
+        </section>
+
+        <footer>
+            <span>Open source on <a class="inline" href="https://github.com/j4ckxyz/site-home-page" rel="noopener noreferrer" target="_blank">GitHub</a>.</span>
+        </footer>
+    </main>
+</body>
+</html>
+
+
